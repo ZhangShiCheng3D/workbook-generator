@@ -1,0 +1,13 @@
+-- Seed data: 8 Reusable Workbook Templates
+-- DESIGN.html §17 Phase 1: 8 curated templates at launch
+
+INSERT INTO templates (id, org_id, title, description, subject, grade_level, category, question_types, difficulty, default_question_count, prompt_config, is_public, usage_count, created_at, updated_at)
+VALUES
+('tmpl-001', NULL, 'Fractions Quick Check', '5-question bell ringer for fractions review', 'math', '4', 'bell_ringer', '["multiple_choice","fill_blank"]', 'basic', 5, '{"focus":"fractions equivalence and comparison","standards":["4.NF.A.1","4.NF.A.2"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-002', NULL, 'Multiplication Exit Ticket', '3-question exit ticket for multiplication', 'math', '3', 'exit_ticket', '["multiple_choice","fill_blank"]', 'grade_level', 3, '{"focus":"multiplication facts within 100","standards":["3.OA.C.7"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-003', NULL, 'Multiplication Facts Quiz', '15-question multiplication quiz', 'math', '3', 'quiz', '["multiple_choice","true_false","fill_blank"]', 'grade_level', 15, '{"focus":"multiplication fluency","standards":["3.OA.A.1","3.OA.C.7"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-004', NULL, 'Reading Comprehension Passage', 'Short passage with 5 comprehension questions', 'ela', '5', 'homework', '["multiple_choice","short_answer"]', 'grade_level', 5, '{"focus":"text evidence and inference","standards":["RL.5.1","RI.5.1"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-005', NULL, 'Science Vocabulary Builder', '20-question vocabulary matching and MC for science topics', 'science', '6', 'test_prep', '["multiple_choice","matching","fill_blank"]', 'grade_level', 20, '{"focus":"key science vocabulary","standards":["NGSS.PS1","NGSS.LS1"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-006', NULL, 'Decimal Operations Worksheet', '20-question decimal operations practice', 'math', '5', 'homework', '["multiple_choice","fill_blank","short_answer"]', 'grade_level', 20, '{"focus":"decimal addition subtraction multiplication division","standards":["5.NBT.B.7"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-007', NULL, 'Grammar & Conventions', '10-question grammar practice', 'ela', '3', 'homework', '["multiple_choice","fill_blank"]', 'basic', 10, '{"focus":"grammar conventions and usage","standards":["L.3.1","L.3.2"]}', 1, 0, datetime('now'), datetime('now')),
+('tmpl-008', NULL, 'US Civil War Assessment', '12-question assessment on Civil War', 'social_studies', '8', 'test_prep', '["multiple_choice","short_answer","essay"]', 'grade_level', 12, '{"focus":"causes battles and reconstruction","standards":["C3.His.1","C3.His.5"]}', 1, 0, datetime('now'), datetime('now'));
